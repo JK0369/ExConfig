@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
         
-        // fetchInterval은 가능하면 낮게 설정하는게 좋음: https://firebase.google.com/docs/remote-config/get-started?platform=ios&hl=ko#throttling
+        // fetchInterval 설정: https://firebase.google.com/docs/remote-config/get-started?platform=ios&hl=ko#throttling
         settings.minimumFetchInterval = 0
         remoteConfig.configSettings = settings
         
